@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{{ url_for("static",filename="css/bootstrap.min.css") }}">
+    <title>タスク管理</title>
+    {% block head %}{% endblock %}
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light p-3">
+      <a class="navbar-brand" style="font-size:2rem;" href="/">タスク管理</a>
+    </nav>
+    {% block body %}{% endblock %}
+  </body>
+</html>
